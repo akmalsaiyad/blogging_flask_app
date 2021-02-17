@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color : black;
+    color: white
+}
+
+.text-home{
+color: black !important;
+}
+.text-home h1{
+    border-bottom: 2px solid purple
+}
+
+.post-head{
+margin-top:10px;
+font-family: 'Newsreader', serif;
+}
+
+hr{
+background-color:yellow;
+}
+
+.cardx hr{
+background-color:black
+}
+.cardx h1{
+margin-top:5px;
+font-family: 'Ranchers', cursive;
+    text-align:center;
+    color:black;
+    text-decoration:underline;
+}
+.cardx small{
+text-align:center;
+color:grey;
+}
+
+.cardx article{
+white-space:pre-wrap;
+font-family: 'Dancing Script', cursive;
+    font-size:40px;
+    margin-top:5px;
+    text-align:center;
+    color:red;
+}
+
+.form{
+    padding:10px
+}
+.form input{
+    margin:10px;
+    padding:10px;
+}
+

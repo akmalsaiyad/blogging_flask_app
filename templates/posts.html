@@ -1,0 +1,39 @@
+{%extends 'base.html'%}
+
+ {% block head %}
+<title>Posts</title>
+
+    {% endblock %}
+ {% block body %}
+<div>
+    <br>
+<h2 class="post-head" style="display:inline">All Blog Posts</h2>
+<a href="/posts/new" class="btn btn-success float-right" style="display:inline">+ New Post</a>
+</div>
+<hr>
+<div class="container">
+
+{% for post in posts%}
+
+      <div class="card col-sm-10 mt-4 mx-auto cardx">
+    <h1>{{post.title}}</h1>
+          <small>{{post.date_posted}}</small>
+    <article>{{post.content}}</article>
+<span class="mt-4 mx-auto">
+
+    <a class=" btn btn-danger btn-sm" href="/posts/delete/{{post.id}}">Delete</a>
+
+    <a class=" btn btn-primary btn-sm" href="/posts/edit/{{post.id}}">Edit</a>
+</span>
+<hr>
+          </div>
+
+{%endfor%}
+
+</div>
+
+
+
+    {% endblock %}
+
+
