@@ -82,5 +82,5 @@ terminal python environment
 >>>db.create_all()
 
 
-
+flask run --port=8000
 '''
